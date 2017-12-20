@@ -24,6 +24,8 @@
         "@angular/router": "5.1.1",
         "@ngx-translate/core": "9.0.2",
         "@ngx-translate/http-loader": "2.0.1",
+        "@progress/kendo-angular-l10n": "^1.0.5",
+        "@progress/kendo-theme-default": "^2.45.3",
         "core-js": "2.5.3",
         "rxjs": "5.5.5",
         "zone.js": "0.8.18"
