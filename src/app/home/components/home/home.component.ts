@@ -14,6 +14,10 @@ export class HomeComponent implements OnInit {
     // Allow navigation?
     allowNavigation = false;
 
+    // ActiveView option types
+    selectedActiveView = 'month'
+    activeViewOptions = ['month', 'year', 'decade', 'century'];
+
     constructor() { }
 
     ngOnInit() {
