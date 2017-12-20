@@ -11,6 +11,9 @@ export class HomeComponent implements OnInit {
     minDate: Date = new Date(2017, 5, 15);
     maxDate: Date = new Date(2017, 6, 15);
 
+    // Allow navigation?
+    allowNavigation = false;
+
     constructor() { }
 
     ngOnInit() {
