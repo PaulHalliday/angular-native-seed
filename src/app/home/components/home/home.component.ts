@@ -7,12 +7,9 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-    // Focused date
-    focusedDate: Date = new Date(2017, 11, 25);
-
-    // Setting the selected date
-    selectedDate: Date = new Date(2017, 10, 20);
-
+    // Minimum and maximum dates
+    minDate: Date = new Date(2017, 5, 15);
+    maxDate: Date = new Date(2017, 6, 15);
 
     constructor() { }
 
