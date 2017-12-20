@@ -1,21 +1,5 @@
-<!-- Calendar with min and max dates 
-
-<kendo-calendar [min]="minDate" [max]="maxDate"></kendo-calendar>
-
--->
-
-<!-- Calendar with navigation options 
-
-<kendo-calendar [navigation]="allowNavigation"></kendo-calendar>
-
--->
-
-<!-- Calendar active view types 
-
-<select [(ngModel)]="selectedActiveView">
-    <option *ngFor="let option of activeViewOptions" [value]="option">{{option}}</option>
-</select>
-
-<kendo-calendar [activeView]="selectedActiveView" [navigation]="allowNavigation"></kendo-calendar>
-
--->
+<kendo-calendar>
+    <ng-template kendoCalendarMonthCellTemplate let-date>
+        <span [ngClass]="{dateColor: isEvenDate(date)}">{{date.getDate()}}</span>
+    </ng-template>
+</kendo-calendar>
