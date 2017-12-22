@@ -1,13 +1,12 @@
-<!-- Custom calendar directives -->
 <kendo-calendar weekNumber="true">
 
-  <!-- Blue dates if even -->
+  <!-- Blue dates if even date, plum if odd -->
   <ng-template kendoCalendarMonthCellTemplate let-date>
-      <span [ngClass]="{dateColor: isEvenDate(date)}">{{date.getDate()}}</span>
+    <span [ngClass]="{ evenDate: isEvenDate(date), oddDate: !isEvenDate(date) }">{{date.getDate()}}</span>
   </ng-template>
 
-  <!-- Custom weeks -->
   <ng-template kendoCalendarWeekNumberCellTemplate let-context="cellContext">
-    <span class="weeknumber-cell">W:{{context.formattedValue}}</span>
+    <span class="weekNumber">W: {{ context.formattedValue }}</span>
   </ng-template>
+
 </kendo-calendar>
