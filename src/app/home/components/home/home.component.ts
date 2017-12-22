@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-    constructor() {}
+    selectedActiveView = 'decade';
+    activeViewOptions = ['month', 'year', 'decade', 'century'];
 
-    isEvenDate(date: Date) {
-        return date.getDate() % 2 === 0;
-    }
+    constructor() {}
 }
